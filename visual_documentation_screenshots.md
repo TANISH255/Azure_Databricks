@@ -15,7 +15,8 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 * **Description:** Reading Parquet files using `cloudFiles` and writing them out with checkpointing enabled.
 * **File Reference:** `docs/screenshots/02_autoloader_stream.png`
 
-![02_autoloader_stream.png](docs/screenshots/02_autoloader_stream.png)
+<img width="940" height="500" alt="image" src="https://github.com/user-attachments/assets/b58ae93b-c78e-4e4d-9e4f-b2897532771e" />
+
 
 ---
 
@@ -23,7 +24,11 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 * **Description:** Output `.snappy.parquet` data files created in the ADLS Gen2 `bronze` container.
 * **File Reference:** `docs/screenshots/03_bronze_parquet_files.png`
 
-![03_bronze_parquet_files.png](docs/screenshots/03_bronze_parquet_files.png)
+<img width="940" height="236" alt="image" src="https://github.com/user-attachments/assets/50d5f091-70a5-4a16-b62e-bf101f5077ff" /> 
+
+<img width="940" height="273" alt="image" src="https://github.com/user-attachments/assets/abb118cb-4f65-4121-9026-024a2b9b8501" />
+
+
 
 ---
 
