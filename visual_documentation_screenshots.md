@@ -81,6 +81,10 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 * **Description:** Orchestration workflow using a `For-each` loop to pass dynamic dataset parameters down to notebook tasks.
 * **File Reference:** `docs/screenshots/09_job_workflow_graph.png`
 
+### Databricks Task Parameter Mapping
+* **Description:** Task configuration panel mapping dynamic key-value parameters (`file_name` $\rightarrow$ `{{input.file_name}}`).
+* **File Reference:** `docs/screenshots/10_job_task_parameters.png`
+
 <img width="540" height="211" alt="image" src="https://github.com/user-attachments/assets/e60f0220-37ef-4b40-81aa-58d5f0b43a94" /> 
 
 <img width="540" height="211" alt="image" src="https://github.com/user-attachments/assets/93a0a85d-d0bb-4115-b81d-218339d1623d" />
@@ -89,8 +93,6 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 
 ---
 
-### 10. Databricks Task Parameter Mapping
-* **Description:** Task configuration panel mapping dynamic key-value parameters (`file_name` $\rightarrow$ `{{input.file_name}}`).
-* **File Reference:** `docs/screenshots/10_job_task_parameters.png`
+
 
 ![10_job_task_parameters.png](docs/screenshots/10_job_task_parameters.png)
