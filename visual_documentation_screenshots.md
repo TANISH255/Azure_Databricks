@@ -95,4 +95,4 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 
 
 
-![10_job_task_parameters.png](docs/screenshots/10_job_task_parameters.png)
+
