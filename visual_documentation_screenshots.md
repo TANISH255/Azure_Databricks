@@ -7,8 +7,7 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 ### 1. Compute Cluster Configuration
 * **Description:** Configuration of the Databricks Single Node cluster (`Standard_D4ds_v4`) used for dynamic Auto Loader execution.
 * **File Reference:** `docs/screenshots/01_compute_cluster.png`
-
-![01_compute_cluster.png](docs/screenshots/01_compute_cluster.png)
+<img width="940" height="352" alt="image" src="https://github.com/user-attachments/assets/051cb495-2f79-451e-9d93-217c01ba6ba3" />
 
 ---
 
