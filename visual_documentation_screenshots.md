@@ -26,7 +26,7 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 
 <img width="940" height="236" alt="image" src="https://github.com/user-attachments/assets/50d5f091-70a5-4a16-b62e-bf101f5077ff" /> 
 
-<img width="940" height="273" alt="image" src="https://github.com/user-attachments/assets/abb118cb-4f65-4121-9026-024a2b9b8501" />
+
 
 
 
@@ -36,7 +36,8 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 * **Description:** Auto Loader state and offset tracking directory structure (`commits`, `offsets`, `sources`, `metadata`).
 * **File Reference:** `docs/screenshots/04_checkpoint_storage.png`
 
-![04_checkpoint_storage.png](docs/screenshots/04_checkpoint_storage.png)
+<img width="940" height="273" alt="image" src="https://github.com/user-attachments/assets/9c1485ee-c48b-4922-85c2-e09823629617" />
+
 
 ---
 
@@ -44,7 +45,8 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 * **Description:** Uploading new incremental data batch into Azure Blob Storage container to test Auto Loader streaming.
 * **File Reference:** `docs/screenshots/05_upload_new_data.png`
 
-![05_upload_new_data.png](docs/screenshots/05_upload_new_data.png)
+<img width="940" height="221" alt="image" src="https://github.com/user-attachments/assets/8bc9cf06-6456-421d-a7cd-cb770bd10d91" />
+
 
 ---
 
@@ -52,7 +54,8 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 * **Description:** Spark DataFrame record count updated automatically from 9,990 to 10,000 records without duplicate ingestion.
 * **File Reference:** `docs/screenshots/06_incremental_verification.png`
 
-![06_incremental_verification.png](docs/screenshots/06_incremental_verification.png)
+<img width="940" height="492" alt="image" src="https://github.com/user-attachments/assets/d1f69260-92ed-414a-b238-5ba1263abd76" />
+
 
 ---
 
@@ -60,7 +63,8 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 * **Description:** Interactive text widget defined using `dbutils.widgets.text()` to make the pipeline dataset-agnostic.
 * **File Reference:** `docs/screenshots/07_widgets_setup.png`
 
-![07_widgets_setup.png](docs/screenshots/07_widgets_setup.png)
+<img width="940" height="583" alt="image" src="https://github.com/user-attachments/assets/723ceef1-b641-4fc4-8777-c1501348a9f9" />
+
 
 ---
 
@@ -68,7 +72,8 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 * **Description:** Parameterized path strings utilizing `f"{p_file_name}"` for schema location, source path, and output path.
 * **File Reference:** `docs/screenshots/08_dynamic_pipeline.png`
 
-![08_dynamic_pipeline.png](docs/screenshots/08_dynamic_pipeline.png)
+<img width="940" height="434" alt="image" src="https://github.com/user-attachments/assets/cfe06175-8651-4994-9afb-a44ecc2437c7" />
+
 
 ---
 
@@ -76,7 +81,11 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 * **Description:** Orchestration workflow using a `For-each` loop to pass dynamic dataset parameters down to notebook tasks.
 * **File Reference:** `docs/screenshots/09_job_workflow_graph.png`
 
-![09_job_workflow_graph.png](docs/screenshots/09_job_workflow_graph.png)
+<img width="540" height="211" alt="image" src="https://github.com/user-attachments/assets/e60f0220-37ef-4b40-81aa-58d5f0b43a94" /> 
+
+<img width="540" height="211" alt="image" src="https://github.com/user-attachments/assets/93a0a85d-d0bb-4115-b81d-218339d1623d" />
+
+
 
 ---
 
