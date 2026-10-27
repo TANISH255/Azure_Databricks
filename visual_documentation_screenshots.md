@@ -96,38 +96,15 @@ This document maintains the complete image log for the **Azure Databricks Dynami
   <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/64e12e8c-38e1-4db6-ad4a-11a406da7727" />
   <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c7a2b260-a6cc-4e44-82ea-6b57511be0a8" />
 
-
-
-
-### 11. Silver_Orders Notebook
-
-- **Description:** Transformation notebook with type casting, data quality rules, deduplication and MERGE.
-- **File Reference:** `docs/screenshots/12_silver_orders_notebook.png`
-
-### 12. Silver_Customers Notebook
-
-- **Description:** Customer standardisation and validation notebook.
-- **File Reference:** `docs/screenshots/13_silver_customers_notebook.png`
-
-### 13. Silver_Products Notebook
-
-- **Description:** Product standardisation and validation notebook.
-- **File Reference:** `docs/screenshots/14_silver_products_notebook.png`
-
-### 14. Silver_Regions Notebook
-
-- **Description:** Regions cleaning notebook reading from `databricks_cata.bronze.regions`.
-- **File Reference:** `docs/screenshots/15_silver_regions_notebook.png`
-
 ### 15. Catalog-Level Functions
 
 - **Description:** `discount_func` and other Unity Catalog functions listed under the schema in Catalog Explorer.
-- **File Reference:** `docs/screenshots/16_catalog_functions.png`
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/bd1d14d7-d645-4db7-84fe-3cd8a5a9e298" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/2b85a699-6647-499a-96d6-d558deefb4ce" />
 
-### 16. Silver Job Run
 
-- **Description:** Job run graph showing bronze tasks followed by the four silver tasks.
-- **File Reference:** `docs/screenshots/17_silver_job_run.png`
+
+
 
 ---
 
