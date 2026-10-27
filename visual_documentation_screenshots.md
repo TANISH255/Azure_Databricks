@@ -91,8 +91,13 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 
 ### 10. Silver Schema in Catalog Explorer
 
-- **Description:** `databricks_cata.silver` schema with the four silver tables and quarantine tables.
-- **File Reference:** `docs/screenshots/11_silver_catalog_tables.png`
+- **Description:** `databricks_cata.silver` schema with the four silver tables and quarantine tables , data loaded in silver layer with the help of 4 notebooks where initially we performed transformation and at last load to tgt ( "(df.write.mode("append").format("delta").save("abfss://silver@datalaketanish.dfs.core.windows.net/customers") ")
+  <img width="1632" height="842" alt="image" src="https://github.com/user-attachments/assets/104ac873-9ed1-45be-b0de-29119834c123" />
+  <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/64e12e8c-38e1-4db6-ad4a-11a406da7727" />
+  <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/c7a2b260-a6cc-4e44-82ea-6b57511be0a8" />
+
+
+
 
 ### 11. Silver_Orders Notebook
 
