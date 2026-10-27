@@ -89,7 +89,40 @@ This document maintains the complete image log for the **Azure Databricks Dynami
 
 <img width="540" height="211" alt="image" src="https://github.com/user-attachments/assets/93a0a85d-d0bb-4115-b81d-218339d1623d" />
 
+### 10. Silver Schema in Catalog Explorer
 
+- **Description:** `databricks_cata.silver` schema with the four silver tables and quarantine tables.
+- **File Reference:** `docs/screenshots/11_silver_catalog_tables.png`
+
+### 11. Silver_Orders Notebook
+
+- **Description:** Transformation notebook with type casting, data quality rules, deduplication and MERGE.
+- **File Reference:** `docs/screenshots/12_silver_orders_notebook.png`
+
+### 12. Silver_Customers Notebook
+
+- **Description:** Customer standardisation and validation notebook.
+- **File Reference:** `docs/screenshots/13_silver_customers_notebook.png`
+
+### 13. Silver_Products Notebook
+
+- **Description:** Product standardisation and validation notebook.
+- **File Reference:** `docs/screenshots/14_silver_products_notebook.png`
+
+### 14. Silver_Regions Notebook
+
+- **Description:** Regions cleaning notebook reading from `databricks_cata.bronze.regions`.
+- **File Reference:** `docs/screenshots/15_silver_regions_notebook.png`
+
+### 15. Catalog-Level Functions
+
+- **Description:** `discount_func` and other Unity Catalog functions listed under the schema in Catalog Explorer.
+- **File Reference:** `docs/screenshots/16_catalog_functions.png`
+
+### 16. Silver Job Run
+
+- **Description:** Job run graph showing bronze tasks followed by the four silver tasks.
+- **File Reference:** `docs/screenshots/17_silver_job_run.png`
 
 ---
 
