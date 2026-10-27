@@ -102,7 +102,7 @@ Same for other tables ..
 <img width="1715" height="569" alt="image" src="https://github.com/user-attachments/assets/a288cf4b-eb39-443e-bd48-f16637615941" />
 
 
-### 15. Catalog-Level Functions
+### 11. Catalog-Level Functions
 
 - **Description:** `discount_func` and other Unity Catalog functions listed under the schema in Catalog Explorer.
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/bd1d14d7-d645-4db7-84fe-3cd8a5a9e298" />
