@@ -108,6 +108,50 @@ Same for other tables ..
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/bd1d14d7-d645-4db7-84fe-3cd8a5a9e298" />
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/2b85a699-6647-499a-96d6-d558deefb4ce" />
 
+### 12. Gold Layer – Gold_Customers
+
+**Objective:** Build the Gold-layer Customers dimension by processing customer records from the Silver layer and identifying new and existing records.
+
+**Steps Performed:**
+
+1. **Library Imports:** Imported the required PySpark libraries and Delta Lake utilities for data transformation and processing.
+
+2. **Widget Initialization:** Initialized the `init_load_flag` widget to control the initial load and subsequent incremental processing logic.
+
+3. **Source Data Extraction:** Loaded customer records from the Silver layer using the following query:
+
+   ```sql
+   SELECT * FROM databricks_cata.silver.customers_silver
+   ```
+
+4. **Duplicate Removal:** Applied `dropDuplicates()` to eliminate duplicate records from the incoming customer dataset.
+
+5. **New and Existing Record Identification:** Divided the incoming customer records into new and existing records by comparing them with the existing Gold-layer customer data.
+
+6. **Column Renaming:** Renamed the relevant columns in `df_old` to distinguish existing Gold-layer customer attributes during the join operation and avoid column-name conflicts.
+
+7. **Join Operation:** Performed a join between the incoming customer DataFrame and existing customer records to identify matching and non-matching customers.
+
+8. **Record Separation:** Separated the joined DataFrame into two DataFrames based on the presence of `old_customer_id`:
+
+   - **New Records (`df_new`):** Records that do not have a matching customer in the existing Gold dataset.
+
+     ```python
+     df_new = df_join.filter(
+         df_join['old_customer_id'].isNull()
+     )
+     ```
+
+   - **Existing Records (`df_old`):** Records that have a matching customer in the existing Gold dataset.
+
+     ```python
+     df_old = df_join.filter(
+         df_join['old_customer_id'].isNotNull()
+     )
+     ```
+
+**Outcome:** Successfully prepared separate datasets containing new and existing customer records, establishing the foundation for incremental loading and further SCD-based transformations in the Gold layer.
+
 
 
 
