@@ -150,7 +150,29 @@ Same for other tables ..
      )
      ```
 
-**Outcome:** Successfully prepared separate datasets containing new and existing customer records, establishing the foundation for incremental loading and further SCD-based transformations in the Gold layer.
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/35107e2d-445e-43c2-8ad6-3d03136933f1" /> 
+
+### 13. Gold Layer – Preparing Existing Customer Records (`df_old`)
+
+**Objective:** Prepare existing customer records (`df_old`) for the Gold layer by retaining the required columns and updating the audit and timestamp fields.
+
+**Steps Performed:**
+
+1. **Column Selection:** Dropped unnecessary columns that were not required in the final Gold-layer customer dimension.
+
+2. **Surrogate Key Renaming:** Renamed `old_DimCustomersKey` to `DimCustomerKey` to retain the existing customer dimension key.
+
+3. **Create Date Renaming:** Renamed the existing `old_create_date` column to `create_date`, preserving the original customer creation timestamp.
+
+4. **Update Date Recreation:** Recreated the `update_date` column using the current timestamp to track when the customer record was last processed or updated.
+
+<img width="940" height="420" alt="image" src="https://github.com/user-attachments/assets/190e8e4c-826f-4583-a514-b83111e942cb" /> 
+
+Preparing df_new for updated data :
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/edceb497-c3d6-4fa2-8bbb-5a1cb09a87d1" />
+
+
+
 
 
 
